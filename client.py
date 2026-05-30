@@ -41,7 +41,7 @@ def receive():
 font_win = font.Font(None, 72)
 font_main = font.Font(None, 36)
 # --- ЗОБРАЖЕННЯ ----
-
+paddle_l = transform.scale(image.foad())
 # --- ЗВУКИ ---
 
 # --- ГРА ---

@@ -144,6 +144,6 @@ class GameServer:
                 except:
                     pass
                 self.clients[pid] = None
-                self.connected[pid] = False
+                self.connected[pid] = False 
 
 GameServer().run()
