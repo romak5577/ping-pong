@@ -38,12 +38,19 @@ def receive():
             break
 
 # --- ШРИФТИ ---
+
 font_win = font.Font(None, 72)
 font_main = font.Font(None, 36)
-# --- ЗОБРАЖЕННЯ ----
-paddle_l = transform.scale(image.foad())
-# --- ЗВУКИ ---
 
+# --- ЗОБРАЖЕННЯ ----
+pixilart_1 = transform.scale(image.load('pixil-frame-0.png').convert_alpha(),(20,100))
+pixilart_1 = transform.scale(image.load('pixilart.png').convert_alpha(),(20,100))
+# --- ЗВУКИ ---
+mixer.init()
+
+bg_mixer = mixer.load(/)
+
+some_sound = sound()
 # --- ГРА ---
 game_over = False
 winner = None
@@ -115,3 +122,8 @@ while True:
         client.send(b"UP")
     elif keys[K_s]:
         client.send(b"DOWN")
+
+
+
+pixilart_1 = transform.scale(image.load('paxilart.png').convert_alpha(),(20,100))
+pixilart_1 = transform.scale(image.load('pixilart.png').convert_alpha(),(20,100))
